@@ -1,0 +1,19 @@
+import java.util.*;
+class HelloWorld {
+         
+    public static void main(String[] args) {
+    
+        System.out.println("Enter the Number: ");
+        Scanner Scan = new Scanner(System.in);
+        int rev=Scan.nextInt();
+         int reverse = 0; 
+        while(rev != 0)   
+        {  
+        int remainder = rev % 10;  
+        reverse = reverse * 10 + remainder;  
+        rev = rev/10; 
+        }
+        System.out.println("Reverse Printing !"+reverse);
+
+    }
+}
