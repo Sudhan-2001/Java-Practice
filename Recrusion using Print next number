@@ -1,0 +1,27 @@
+public static void main(String[] args) {
+       	    int arr[]={1,2,3,4};
+	   System.out.println("Given");
+	    for(int jack:arr){
+	        System.out.print(jack+" ");
+	    }
+	     System.out.println("\n");
+	     System.out.println("Printed");
+	    int index=helper();
+	    addOne(arr,index);
+	    
+	}
+	public static int helper(){
+	    int i=0; return i;
+	}
+	
+	public static int[] addOne(int[] arr,int index){
+	   
+	    int result[]=new int[arr.length];
+	    if(index>arr.length-1){
+	        return result;
+	    }
+      //Recrusion call
+	    result[index]=arr[index]+1;
+	    System.out.print(result[index]+" ");
+	    return addOne(arr,index+1);
+    }
