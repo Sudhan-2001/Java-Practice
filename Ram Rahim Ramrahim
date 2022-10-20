@@ -1,0 +1,19 @@
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		int s=1;
+		Scanner scan=new Scanner(System.in);
+		int n=scan.nextInt();
+		for(int i=1;i<n;i++){
+		    if(i%5==0 && i%3==0){
+		        System.out.print("Ramrahim ");
+		    }
+		    else if(i%5==0){
+		         System.out.print("Ram ");
+		    }
+		    else if(i%3==0){
+		        System.out.print("Rahim ");
+		    }else{
+		        System.out.print(i+" ");
+		    }
+		}
+	}
