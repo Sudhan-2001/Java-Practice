@@ -1,0 +1,22 @@
+public static void main(String[] args) {
+      alphabets();
+    }
+
+    private static void alphabets() {
+
+        int totalAlphabets = 26;
+        int alphabetStarting = 97;
+        int alphabetEnding = 122;
+        for (int row = 0; row < totalAlphabets; row++) {
+
+            for (int coloumn = row + alphabetStarting; coloumn <= alphabetEnding; coloumn++) {
+                System.out.print((char) coloumn + " ");
+            }
+            for (int empCol = 1; empCol <= row; empCol++) {
+                System.out.print((char) ((alphabetStarting)) + " ");
+                alphabetStarting = alphabetStarting + 1;
+            }
+            alphabetStarting = 97;
+            System.out.println();
+        }
+	}
