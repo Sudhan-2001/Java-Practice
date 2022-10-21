@@ -1,0 +1,10 @@
+public static void main(String[] args) {
+		System.out.println("Hello World");
+    Scanner scan=new Scanner(System.in);
+    	System.out.println("Enter Your weight: ");
+    int weight=scan.nextInt();
+    int w,l;
+    w=weight%16;
+    l=weight/16;	
+    System.out.println(" Pounds: "+w+" Ounces:"+l);
+	}
