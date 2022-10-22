@@ -1,0 +1,28 @@
+	public static void main(String[] args) {
+      String str;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the Name:");
+        str = scan.nextLine();
+        nameCounter(str);
+        scan.close();
+    }
+
+    private static void nameCounter(String str) {
+        str = str.toLowerCase();
+        char[] c = str.toCharArray();
+        int sum = 0;
+        Map<Character, Integer> name = new HashMap<Character,Integer>();
+        int value = 1;
+        for (char i = 'a'; i <= 'z'; i++, value++) {
+            name.put(i, value);
+        }
+        System.out.println(name);
+        for (char i = 0; i < c.length; i++) {
+            System.out.println(c[i]);
+            if (name.containsKey(c[i])) {
+                sum += name.get(c[i]);
+            }
+        }
+        System.out.println(str + "-->" + sum);
+}
+}
