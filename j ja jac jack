@@ -1,0 +1,16 @@
+ public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter ur name: ");
+        String jack=scan.nextLine();
+        
+        char[] res=jack.toCharArray();
+        int length=res.length;
+        int count=1;
+        for (int i=0;i <length;i++){
+            for (int j=0;j <= count;j++){
+                System.out.print(res[j]);
+            }
+            System.out.println(" ");
+                count++;
+        }
+        }
